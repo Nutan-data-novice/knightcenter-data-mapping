@@ -22,4 +22,6 @@ downloads:
 
 freshdata:
 	node imf_to_csv.js
+	
 all:directories downloads freshdata
+
