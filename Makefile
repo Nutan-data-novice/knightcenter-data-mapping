@@ -1,6 +1,6 @@
 # Here's where we'll put our Make commands
 greetings:
-	echo 'hello'
+	echo 'hello world'
 
 	math:
 		expr 2 + 2
@@ -8,6 +8,8 @@ math:
 	expr 2	*	2
 maths:
 	expr	2	-	2
+
+all:greetings math maths
 
 directories:
 		-mkdir tmp
