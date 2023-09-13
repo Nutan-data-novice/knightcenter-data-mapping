@@ -2,10 +2,10 @@
 greetings:
 	echo 'hello world'
 
-	math:
-		expr 2 + 2
 math:
-	expr 2	*	2
+		expr 2 + 2
+
+
 maths:
 	expr	2	-	2
 
