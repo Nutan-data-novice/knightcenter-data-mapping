@@ -65,3 +65,5 @@ filecheck:
 		--insecure \
 		--data '{"text":"The file you asked me to watch has changed!"}' $$SLACK_WEBHOOK
 
+done:
+	echo 'checking makefile'
