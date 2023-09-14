@@ -1,33 +1,28 @@
-# Here's where we'll put our Make commands
-greetings:
-	echo 'hello world'
+## This is your prebaked makefile!
+## use the other one for actual running of code
+
+greeting:
+	echo 'hello'
 
 math:
-		expr 2 + 2
-
-
-maths:
-	expr	2	-	2
-
-all1:greetings math maths
+	expr 2 + 2
 
 directories:
-		-mkdir tmp
-		-mkdir data
+	-mkdir tmp
+	-mkdir data
 
 downloads:
-		curl "https://www.imf.org/external/datamapper/api/v1/PCPIPCH?periods=2023" -o tmp/inflation.json
-		curl "https://www.imf.org/external/datamapper/api/v1/countries" -o tmp/countries.json
-
+	curl "https://www.imf.org/external/datamapper/api/v1/PCPIPCH?periods=2023" -o tmp/inflation.json
+	curl "https://www.imf.org/external/datamapper/api/v1/countries" -o tmp/countries.json
 
 freshdata:
 	node imf_to_csv.js
 
-all:directories downloads freshdata
+all: directories downloads freshdata
 
 clean:
-	#-rm -rf ./data
-	#-rm -rf ./tmp
+	-rm -rf ./data
+	-rm -rf ./tmp
 
 
 droughtmap:
@@ -65,5 +60,3 @@ filecheck:
 		--insecure \
 		--data '{"text":"The file you asked me to watch has changed!"}' $$SLACK_WEBHOOK
 
-done:
-	echo 'checking makefile'
