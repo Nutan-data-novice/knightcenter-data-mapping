@@ -6,7 +6,8 @@ greeting:
 
 math:
 	expr 2 + 2
-
+all1:	greeting math
+	
 directories:
 	-mkdir tmp
 	-mkdir data
