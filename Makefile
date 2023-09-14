@@ -3,7 +3,6 @@
 
 greeting:
 	echo 'hello world'
-
 math:
 	expr 2 + 2
 all1:	greeting math
