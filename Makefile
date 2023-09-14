@@ -2,7 +2,7 @@
 ## use the other one for actual running of code
 
 greeting:
-	echo 'hello'
+	echo 'hello world'
 
 math:
 	expr 2 + 2
