@@ -26,7 +26,7 @@ clean:
 
 
 droughtmap:
-	# get and unzip the drought map
+	#  get and unzip the drought map
 	curl "https://droughtmonitor.unl.edu/data/shapefiles_m/USDM_current_M.zip" -o tmp/USDM_current_M.zip
 	unzip -o ./tmp/USDM_current_M.zip -d ./tmp
 
